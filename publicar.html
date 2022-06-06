@@ -40,7 +40,7 @@
 
           <label for="comunidad-donde-publicarse"
             >Comunidad donde debe publicarse *
-            <select id="comunidad">
+            <select id="comunidad" name="select">
               <option value="">Selecciona una opcion</option>
               <option value="docencia">Docencia</option>
               <option value="institucional">Institucional</option>
@@ -107,18 +107,19 @@
             id="fecha-creacion-documento"
             required
           />
-
-          <div class="radio">
-            <p>Editorial</p>
-            <input
-              type="radio"
-              name="editorial"
-              id="editorial"
-              value="uoc"
-              checked
-            />
-            <label for="editorial">Universidad Oberta de Cataluña</label>
-          </div>
+          <fieldset>
+            <div class="radio">
+              <p>Editorial</p>
+              <input
+                type="radio"
+                name="editorial"
+                id="editorial"
+                value="uoc"
+                checked
+              />
+              <label for="editorial">Universidad Oberta de Cataluña</label>
+            </div>
+          </fieldset>
 
           <label for="tipo-documento">Tipo de documento *</label>
           <select id="tipo-documento">
@@ -297,7 +298,7 @@
             >
           </fieldset>
 
-          <input type="submit" name="enviar" class="boton" />
+          <input value="enviar" type="submit" name="enviar" class="boton" />
         </form>
       </section>
     </main>
