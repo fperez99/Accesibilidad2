@@ -202,21 +202,23 @@
             </div>
           </fieldset>
 
-          <div class="radio">
-            <p>Tipo de documento de indentidad</p>
-            <div>
-              <input type="radio" name="documento" id="nif" value="nif" />
-              <label for="nif">NIF</label>
+          <fieldset>
+            <div class="radio">
+              <p>Tipo de documento de indentidad</p>
+              <div>
+                <input type="radio" name="documento" id="nif" value="nif" />
+                <label for="nif">NIF</label>
+              </div>
+              <div>
+                <input type="radio" name="documento" id="nie" value="nie" />
+                <label for="nie">NIE</label>
+              </div>
+              <div>
+                <input type="radio" name="documento" id="pass" value="pass" />
+                <label for="pass">PASS</label>
+              </div>
             </div>
-            <div>
-              <input type="radio" name="documento" id="nie" value="nie" />
-              <label for="nie">NIE</label>
-            </div>
-            <div>
-              <input type="radio" name="documento" id="pass" value="pass" />
-              <label for="pass">PASS</label>
-            </div>
-          </div>
+          </fieldset>
 
           <label for="numero-documento">Número de documento *</label>
           <input
@@ -250,30 +252,31 @@
             maxlength="10"
           />
 
-          <div class="radio">
-            <p>Idioma para la respuesta *</p>
-            <div>
-              <input
-                type="radio"
-                name="idioma-respuesta"
-                id="castellano"
-                value="castellano"
-              />
-              <label for="castellano">Castellano</label>
+          <fieldset>
+            <div class="radio">
+              <p>Idioma para la respuesta *</p>
+              <div>
+                <input
+                  type="radio"
+                  name="idioma-respuesta"
+                  id="castellano"
+                  value="castellano"
+                />
+                <label for="castellano">Castellano</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="idioma-respuesta"
+                  id="catalan"
+                  value="calatan"
+                />
+                <label for="catalan">Catalán</label>
+              </div>
             </div>
-            <div>
-              <input
-                type="radio"
-                name="idioma-respuesta"
-                id="catalan"
-                value="calatan"
-              />
-              <label for="catalan">Catalán</label>
-            </div>
-          </div>
-          <hr />
+          </fieldset>
 
-          <div>
+          <fieldset>
             <input
               type="checkbox"
               name="politica-de-privacidad"
@@ -284,15 +287,15 @@
               >He leído y acepto la política de privacidad y el aviso legal
               *</label
             >
-          </div>
+          </fieldset>
 
-          <div>
+          <fieldset>
             <input type="checkbox" name="ser-informado" id="ser-informado" />
             <label for="ser-informado"
               >Dese ser informado sobre las nuevas incorporaciones al
               repositorio</label
             >
-          </div>
+          </fieldset>
 
           <input type="submit" name="enviar" class="boton" />
         </form>
